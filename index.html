@@ -33,11 +33,18 @@
     <div class="row">
         <div class="col-md-3 bio">
             <section>
-                <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/8/005/086/338/38b8caf.jpg"  alt="Iman Jani Profile Pic" class="img-responsive bio-img" style="width:160px">
-                <p class="centered" id="bio-p">
+                <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/8/005/086/338/38b8caf.jpg"  alt="Iman Jani Profile Pic" class="img-responsive bio-img" style="width:160px"><br>
+                <p>Please fill the form to connect  </p>
+                Name: <input id="name" type="text" name="name" value=""><br>
+                Email: <input id="Email" type="text" name="Email" value=""><br>
+                <p><strong id="response"></strong></p>
+                <button id="submit"> Submit </button>
+                <!-- <p class="centered" id="bio-p"> -->
+                <p style="margin-top:20px; position:fixed; left:250px; top:200px">     
+                
                     Quantitative Analyst and Data Professional, who loves the excitement and insight found when digging into data and the beauty and clarity of data visualizations. Please feel free to reach out and get in touch!
                 </p>
-                <!-- <p id="bio-links">
+                <!-- <p id="bio-lisnks">
                     <a href="#">Contact</a> | <a href="#">Projects</a> | <a href="#">Something</a>
                 </p> -->
             </section>
@@ -51,6 +58,7 @@
                             <h3>Rideshare Analysis</h3>
                         </div>
                     </div>
+                    
                 </a>
                 <a href="https://github.com/imanjani1/HW-Twitter/blob/master/Twitter-API-Codes.ipynb">  
                     <div class="thumbnail project">
@@ -75,18 +83,19 @@
     
 
 
-<nav class="navbar navbar-default navbar-static-bottom footer">
+<!-- <nav class="navbar navbar-default navbar-static-bottom footer"> -->
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div id="icon-links" style="position: fixed;
                 left: 0;
                 bottom: 0;
+                height:50px;
                 width: 100%;
                 background-color:rgb(55, 121, 175);
                 
-                margin-bottom: 50px;
-                text-align: center;">>
+                margin-bottom: 10px;
+                text-align: center;">
                     <a href="https://github.com/imanjani1/">
                         <img src="./imanjani_files/github-icon.png" alt="GitHub" class="icon">
                     </a>
@@ -99,7 +108,16 @@
                 </div>
             </div>
         </div>
-    </div>
+    <!-- </div> -->
 </nav>
+<script>
+document.getElementById("submit").addEventListener("click", function (){
 
+name=document.getElementById("name").value;
+email=document.getElementById("Email").value;
+document.getElementById("response").text() = "thanks" + name 
+
+});
+
+</script>
 </body></html>
