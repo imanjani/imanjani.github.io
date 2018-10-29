@@ -1,123 +1,173 @@
 <!DOCTYPE html>
-<!-- saved from url=(0032)https://imanjani1.github.io/ -->
-<html lang="en" class="gr__imanjani1_github_io"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <script type="text/javascript" src="./imanjani_files/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="./imanjani_files/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
     <!-- Optional theme -->
-    <link rel="stylesheet" href="./imanjani_files/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
     <!-- Latest compiled and minified JavaScript -->
-    <script src="./imanjani/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    
-    <link rel="stylesheet" type="text/css" href="./imanjani_files/style.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
 
     <title>Iman Jani</title>
 </head>
 
-<body data-gr-c-s-loaded="true"><nav class="navbar navbar-default">
-    <div class="container-fluid navigation" style="background-color:rgb(55, 121, 175)">
+<nav class="navbar navbar-default">
+    <div class="container-fluid navigation">
         <div class="navbar-header">
-            <a class="navbar-brand" href="https://imanjani1.github.io/index.html" id="main-nav" style="background-color:rgb(55, 121, 175); color:white; font-size:25px">
+            <a class="navbar-brand" href="index.html" id="main-nav">
                 Iman Jani
             </a>
         </div>
     </div>
 </nav>
 
-
+<body>
     <div class="row">
         <div class="col-md-3 bio">
             <section>
-                <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/8/005/086/338/38b8caf.jpg"  alt="Iman Jani Profile Pic" class="img-responsive bio-img" style="width:160px"><br>
-                <p>Please fill the form to connect  </p>
-                Name:<input id="name" type="text"name="name" value=""><br>
-                Email:<input id="Email" type="text" name="Email" value=""><br>
-                <p><strong id="response"></strong></p>
-                <button id="submit"> Submit </button>
-                <!-- <p class="centered" id="bio-p"> -->
-                <p style="margin-top:20px; position:absolute; left:250px; top:200px">     
-                
-                    Quantitative Analyst and Data Professional, who loves the excitement and insight found when digging into data and the beauty and clarity of data visualizations. Please feel free to reach out and get in touch!
+                <img src="assets/bio-img.jpg" alt="Iman Jani Profile Pic" class="img-responsive bio-img">
+                <p class="centered" id="bio-p">
+                    An Engineer and Data Professional, excited by the insight found when exploring data and the beauty and clarity
+                    interactive data visualizations provide on topics from social media, to finance, to sports. Please feel free 
+                    to reach out and get in touch!
                 </p>
-                <!-- <p id="bio-lisnks">
+                <!-- <p id="bio-links">
                     <a href="#">Contact</a> | <a href="#">Projects</a> | <a href="#">Something</a>
                 </p> -->
             </section>
         </div>
         <section>
             <div class="col-md-3">
-                <a href="https://github.com/imanjani1/The-_Power_of_Plots/blob/master/Pyber-Matplots.ipynb">
-                    <div class="thumbnail project">
-                        <img src="./imanjani_files/weather_by_latitude.png" alt="Rideshare Analysis">
+                <a href="https://github.com/imanjani1/WebVisualization/">
+                    <div class="thumbnail project" onmouseover="expand(this)" onmouseout="hide(this)">
+                        <img src="assets/weather_by_latitude.png" alt="Weather By Latitude">
                         <div class="caption">
-                            <h3>Rideshare Analysis</h3>
+                            <h3>Weather By Latitude</h3>
+                        </div>
+                        <div class="project-description">
+                            <hr> 
+                            A study of weather patterns by latitude, utilizing API calls to OpenWeatherMap to gather data on a random assortment of locations
+                            around the globe. Patterns and visualizations are presented via a responsive webpage.
                         </div>
                     </div>
-                    
                 </a>
-                <a href="https://github.com/imanjani1/HW-Twitter/blob/master/Twitter-API-Codes.ipynb">  
-                    <div class="thumbnail project">
-                        <img src="./imanjani_files/march-madness.png" alt="March Madness">
+                <a href="https://world-refugee-crisis.herokuapp.com/">
+                    <div class="thumbnail project" onmouseover="expand(this)" onmouseout="hide(this)">
+                        <img src="assets/refugee-crisis.png" alt="Refugee Crisis">
                         <div class="caption">
-                            <h3>Twitter Sentiment Analysis</h3>
+                            <h3>World Refugee Migration</h3>
+                        </div>
+                        <div class="project-description">
+                            <hr>
+                            A study of world refugee migration from 1990-2016. The primary visualizations is an interactive, time-based map showing 
+                            patterns in battle-related death, fleeing refugees, and asylum seekers for each country over time. Additionally, you can 
+                            select a country to display it's summary statistics.
+                        </div>
+                    </div>
+                </a>
+                <a href="https://belly-button-microbiology.herokuapp.com/">
+                    <div class="thumbnail project" onmouseover="expand(this)" onmouseout="hide(this)">
+                        <img src="assets/belly-button-biodiversity.png" alt="Belly Button Biodiversity">
+                        <div class="caption">
+                            <h3>Belly Button Biodiversity</h3>
+                        </div>
+                        <div class="project-description">
+                            <hr> 
+                            An exploration of an unusual dataset on the diversity of micro-organisms sampled from study participants' belly buttons.
                         </div>
                     </div>
                 </a>
             </div>
-          
-                <a href="https://belly-button-microbiology.herokuapp.com/">  
-                    <div class="thumbnail project">
-                        <img src="./imanjani_files/belly-button-biodiversity.png" alt="Belly Button Biodiversity" style="width:80%">
+            <div class="col-md-3">
+                <a href="https://github.com/imanjani1/Sentiment_analysis_News_python">
+                    <div class="thumbnail project" onmouseover="expand(this)" onmouseout="hide(this)">
+                        <img src="assets/news-tweets.png" alt="News Tweets">
                         <div class="caption">
-                            <h3>Belly Button Biodiversity</h3>
+                            <h3>News Tweet Sentiment</h3>
+                        </div>
+                        <div class="project-description">
+                            <hr> 
+                            A sentiment analysis of major news outlets' most recent tweets. Visualizations explore the sentiment of each
+                            individual tweet, as well as the average sentiment of each outlet. Data gathered from Twitter's API.
                         </div>
                     </div>
                 </a>
-            </div></section>
+                <a href="https://github.com/imanjani1/March_Madness">
+                    <div class="thumbnail project" onmouseover="expand(this)" onmouseout="hide(this)">
+                        <img src="assets/march-madness.png" alt="March Madness">
+                        <div class="caption">
+                            <h3>March Madness By Seed</h3>
+                        </div>
+                        <div class="project-description">
+                            <hr> 
+                            A study of NCAA Basketball Tournament results according to seed. visualizations explore typical seed performance, average expected
+                            results, liklihood of upsets, and teams that have historical overperformed or underperformed expectations.
+                        </div>
+                    </div>
+                </a>
+                <a href="https://github.com/imanjani1/Mission_to_Mars">
+                    <div class="thumbnail project" onmouseover="expand(this)" onmouseout="hide(this)">
+                        <img src="assets/mars-data-scraping.png" alt="Mars Data Scraping">
+                        <div class="caption">
+                            <h3>Mars Data Scraping</h3>
+                        </div>
+                        <div class="project-description">
+                            <hr> 
+                            A webpage of images and information on Mars, delivered via datascraping of prominent Mars-specific and general 
+                            space exploration related agencies and authorities.
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+        </section>
         </div>
-    
+    </div>
+</body>
 
-
-<!-- <nav class="navbar navbar-default navbar-static-bottom footer"> -->
+<nav class="navbar navbar-default navbar-static-bottom footer">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div id="icon-links" style="position: fixed;
-                left: 0;
-                bottom: 0;
-                height:50px;
-                width: 100%;
-                background-color:rgb(55, 121, 175);
-                
-                margin-bottom: 10px;
-                text-align: center;">
+                <div id="icon-links">
                     <a href="https://github.com/imanjani1/">
-                        <img src="./imanjani_files/github-icon.png" alt="GitHub" class="icon">
+                        <img src="assets/github-icon.png" alt="GitHub" class="icon">
                     </a>
                     <a href="https://www.linkedin.com/in/imanjani/">
-                        <img src="./imanjani_files/linkedin-icon.png" alt="LinkedIn" class="icon">
+                        <img src="assets/linkedin-icon.png" alt="LinkedIn" class="icon">
                     </a>
                     <a href="mailto:imanjani.j@gmail.com">
-                        <img src="./imanjani_files/email-icon.png" alt="Email" class="icon">
+                        <img src="assets/email-icon.png" alt="Email" class="icon">
                     </a>
                 </div>
             </div>
         </div>
-    <!-- </div> -->
+    </div>
 </nav>
+
+
 <script>
-document.getElementById("submit").addEventListener("click", function (){
-
-name=document.getElementById("name").value;
-email=document.getElementById("Email").value;
-document.getElementById("response").text() = "thanks" + name 
-
-});
+    function expand(panel) {
+        var description = panel.getElementsByClassName("project-description")[0]
+        description.style.display = "block"
+    }
+    function hide(panel) {
+        var description = panel.getElementsByClassName("project-description")[0]
+        description.style.display = "none"
+    }
 
 </script>
-</body></html>
+
+</html>
